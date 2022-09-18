@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./Resources/css/style.login.signup.css">
+
+</head>
+<body>
+
+    <div id="main-container" class="main-container">
+        <!-- sign up -->
+        <div class="form-container  signUp-container">
+            <form action="#" class="form" id="form-signUp">
+                <h1>sign up</h1>
+                <input type="text" class="input-field" placeholder="Username">
+                <input type="password" class="input-field" placeholder="Email">
+                <input type="Password" class="input-field" placeholder="Password">
+                <input type="password" class="input-field" placeholder="Confirm Password">
+                <button class="btn">sign up</button>
+            </form>
+        </div>
+        <!-- signIn/ logIn -->
+        <div class="form-container signIn-container">
+            <form action="#" class="form" id="form-signIn">
+                <h1>log in</h1>
+                <input type="text" class="input-field" placeholder="Username">
+                <input type="password" class="input-field" placeholder="Password">
+                <a href="#" class="forgot-pass">forgot your username or password?</a>
+                <button class="btn">log in</button>
+            </form>
+        </div>
+        <!-- overlay -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <button class="ghost" id="btn-overlay-signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <button class="ghost" id="btn-overlay-signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Resources/js/script.login.signup.js" charset="utf-8"></script>
+
+</body>
+</html>

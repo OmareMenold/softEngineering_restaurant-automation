@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --black: #333;
+    --white: #fff;
+    --grey: #666;  
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);  
+    --orange: #ee6c09;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 300;
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+.header{
+    height: 100vh;
+    background: url(./images/satsumaSushi.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar-container{
+    position: fixed;
+    background: var(--white);
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+.navbar-container .navbar{
+    padding: 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-container .navbar .logo{
+    font-weight: bolder;
+}
+.navbar-container .navbar ul{
+    display: flex;
+}
+.nav-items li{
+    list-style: none;
+    margin: 0 10px;
+        
+}
+.nav-items li a{
+    text-decoration: none;
+    color: var(--black);
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.7rem;   
+}
+.nav-items li a:active,
+.nav-items li a:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    transition: 0.5s;
+    cursor: pointer;  
+}
+/* navbar end */
+
+/* page-hero start */
+
+/*.pageHero-container{
+    border: 5px solid red;
+    height: 100%;
+}
+.page-hero {
+    position: absolute;
+    width: 1140px; height: 100%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid yellow;
+}
+.ph-textWrapper p{
+    margin: 0;
+    color: var(--white);
+    font-size: 240%;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 5px solid green;
+}
+
+
+*/
+#page-hero{
+    height: 100%;
+}
+.pageHero-container{
+    width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /*   text-align: center; */
+}
+#page-hero .pageHero-info h1 {
+  font-size: 3rem;
+  /* text-transform: uppercase; */
+  margin-bottom: 1rem;
+}
+#page-hero .pageHero-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+#page-hero .pageHero-info p {
+  font-size: 1.2rem;
+  max-width: 50%;
+}
+#page-hero .pageHero-info a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--white);
+  border-radius: 4px;
+  font-size: 1.8rem;
+  padding: 0.5em 2em;
+  margin-top: 2rem;
+  color: var(--orange);
+}
+#page-hero .pageHero-info a:active,
+#page-hero .pageHero-info a:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#page-hero .pageHero-info h1, 
+#page-hero .pageHero-info h2, 
+#page-hero .pageHero-info p{
+    color: var(--white);
+}
+/* page hero end */
+
+/* categories start */
+#categories{
+    padding: 25px 0;
+}
+.categories-container{
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 3px solid transparent;
+}
+.categories-heading{
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.categories-wrapper{
+    display: grid;
+    grid-gap: 100px;
+    margin-top: 50px;
+    padding-right: 50px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.category{
+    border: 2px solid rgba(193,207,193);
+    padding: 50px 30px;
+    border-radius: 30px;
+    position: relative;
+}
+.category h4{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.category .recipes-number{
+    color: #848484;
+    font-size: 14px;
+}
+.category img{
+    position: absolute;
+    max-width: 175px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.2));
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20%;
+    border-radius: 50%;
+}
+.category .btn{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 50px;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    text-decoration: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: nowrap;
+    transform: all 0.3s;
+}
+.category .btn:active,
+.category .btn:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
